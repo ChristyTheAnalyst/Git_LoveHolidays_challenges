@@ -15,11 +15,12 @@ d = {'hotelID':[1,2,3],
         'longitude':[-0.118092,-73.935242,-0.013589],
         'latitude':[51.509865,40.730610,30.123456]}
 df = pd.DataFrame(d)
+print("=============Sample DataFrame taken=============")
 print(df.head())
 
 # Building custom funtion to display nearest hotels for each hotelID in the dataframe
 def findNearestHotel(dFrame):
-    """ 
+    """
     This function returns a dictionary with key as hotel IDs,
     and values as a list of hotelIds nearest to it in ascending order.
     *** Assuming the dataFrame has no null values and hotelIDs are unique"""
@@ -43,6 +44,10 @@ def findNearestHotel(dFrame):
         print("hotelID:",dFrame['hotelID'][i], end=" ")
         print(tempDict)
     
+    print()
+    print("=====Dictonary of hotelIDs with SORTED list of nearest hotelIDs=====")
     return d2
-        
-findNearestHotel(df)
+
+print()
+print("=====Distanace in miles of each hotel from the current hotelID======")       
+print(findNearestHotel(df))
