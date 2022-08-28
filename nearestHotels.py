@@ -3,6 +3,8 @@
 Created on Sat Aug 27 08:08:12 2022
 
 @author: Christy
+
+GitHub Link: https://github.com/Christy007/Git_LoveHolidays_challenges 
 """
 
 # To calculate the distance I will use Geopy python package
